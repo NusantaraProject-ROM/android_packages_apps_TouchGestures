@@ -4,6 +4,9 @@ android_app {
     defaults: ["SettingsLibDefaults"],
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
+    static_libs: [
+        "VendorSupportLib",
+    ],
     manifest: "AndroidManifest.xml",
     system_ext_specific: true,
     platform_apis: true,
